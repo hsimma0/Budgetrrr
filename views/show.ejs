@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/skeleton.css">
+    <title>Placeholder</title>
+</head>
+
+<body>
+  <style>
+    body{
+        background-image: url(https://wallpaperaccess.com/full/2825731.gif);
+        background-repeat: no-repeat;
+        background-position: auto;
+    }
+    h1{
+        color: white;
+    }
+    td{
+        color:white;
+    }
+</style>
+
+  <div class="container">
+    <h1><%= budgetAll.name %></h1>
+    
+  <table>
+
+    <tr>
+      <td> <p>&#128060 Date &#128060</p> </td>
+      <td> <%= budgetAll.date %> </td>
+    </tr>
+
+    <tr>
+      <td> <p>&#128060 Name &#128060</p> </td>
+      <td> <%= budgetAll.name %> </td>
+    </tr>
+
+    <tr>
+      <td> <p>&#128060 From &#128060</p> </td>
+      <td> <%=  budgetAll.from %> </td>
+    </tr>
+
+    <tr>
+      <td> <p>&#128060 Amount &#128060</p> </td>
+      <td> <%= budgetAll.amount %> </td>
+    </tr>
+
+    <tr>
+      <td> <p>&#128060 Tag &#128060</p> </td>
+      <td> <%= budgetAll.tags %> </td>
+    </tr>
+
+  </table>
+  <a href="/budgets/"><button>Go Back to Home Page</button></a>
+  </div>
+</body>
+
+</html>
